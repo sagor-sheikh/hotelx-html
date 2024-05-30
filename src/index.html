@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="keywords" content="boot, tailwindss, Benfit - HTML Tailwindcss Gym Fitness template">
+  <link rel="shortcut icon" href="././assets/images/favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" type="text/css" href="https://unpkg.com/@phosphor-icons/web@2.0.3/src/bold/style.css" />
+  <title>HotelX - </title>
+</head>
+
+<body>
+
+  <!-- Header Starts -->
+  <header class="sticky top-0 z-50 mt-3 md:mt-6">
+    <div class="container p-4 sm:p-6 cmnhed rounded-xl bg-secondary1 border border-nc20">
+      <nav class="text-nw10 rounded-3xl">
+        <div class="flex justify-between items-center relative">
+          <a href="../index.html" class="flex items-center gap-3">
+            <img class="w-[40px] md:w-full" src="./assets/images/logo.png" alt="logo">
+            <h3 class="font-bold max-md:hidden flex items-center gap-[2px]">Hotel <span
+                class="fs-three text-primary">X</span></h3>
+          </a>
+
+          <!-- MOBILE NAV ICON -->
+          <div class="md:hidden block absolute top-[15%] right-0">
+            <button aria-label="navigation" type="button"
+              class="md:hidden text-gray-200 transition duration-300 focus:outline-none focus:text-white hover:text-white"><i
+                class="ph-thin ph-list text-3xl" id="bars"></i></button>
+          </div>
+
+          <!-- NAVIGATION - LARGE SCREENS -->
+          <div class="hidden md:flex">
+            <ul class="hidden md:flex gap-1 lg:gap-1 xl:gap-1">
+              <li class="cmnhed px-4 md:px-5 py-2 md:py-[10px] border border-nc20 rounded-full"><a href="./about.html"
+                  class="transition duration-300 focus:outline-none focus:text-primary focus:underline hover:underline hover:text-primary font-normal">About</a>
+              </li>
+              <li class="cmnhedpx-4 md:px-5 py-2 md:py-[10px] border border-nc20 rounded-full"><a href="./services.html"
+                  class="transition duration-300 focus:outline-none focus:text-primary focus:underline hover:underline hover:text-primary font-normal">Services</a>
+              </li>
+              <li class="px-4 md:px-5 py-2 md:py-[10px] border border-nc20 rounded-full"><a href="./properties.html"
+                  class="transition duration-300 focus:outline-none focus:text-primary focus:underline hover:underline hover:text-primary font-normal">Properties</a>
+              </li>
+              <li class="px-4 md:px-5 py-2 md:py-[10px] border border-nc20 rounded-full"><a href="./blog.html"
+                  class="transition duration-300 focus:outline-none focus:text-primary focus:underline hover:underline hover:text-primary font-normal">Blog</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="btn-area max-sm:hidden z-20 hidden md:flex duration-500">
+            <a href="#" aria-label="Contact"
+              class="move-btn theme-transition-4 flex items-center text-center text-secondary duration-500">
+              <span
+                class="one m-text theme-transition-4 min-h-[45px] rounded-full bg-black-4 px-6 py-3 font-medium duration-500 bg-primary">
+                Subscribe
+              </span>
+              <span
+                class="two d-center theme-transition-4 flex min-h-[45px] shrink-0 items-center justify-center rounded-full bg-black-4 p-3 text-center duration-500 bg-primary">
+                <i class="ph-bold ph-arrow-up-right text-[24px]" data-icon-name="arrow-right"></i>
+              </span>
+            </a>
+          </div>
+        </div>
+        <!-- MOBILE MENU -->
+        <div id="mobileMenu" class="flex w-full mx-auto py-8 text-center show">
+          <div class="flex flex-col justify-center items-center w-full gap-4">
+            <a href="./about.html"
+              class="block transition duration-300 focus:outline-none focus:text-primary focus:underline hover:underline hover:text-primary font-normal">About</a>
+            <a href="./services.html"
+              class="block transition duration-300 focus:outline-none focus:text-primary focus:underline hover:underline hover:text-primary font-normal">services</a>
+            <a href="./properties.html"
+              class="block transition duration-300 focus:outline-none focus:text-primary focus:underline hover:underline hover:text-primary font-normal">Properties</a>
+            <a href="./blog.html"
+              class="block transition duration-300 focus:outline-none focus:text-primary focus:underline hover:underline hover:text-primary font-normal">Blog</a>
+            <div class="btn-area z-20 md:flex duration-500">
+              <a href="#" aria-label="Contact"
+                class="move-btn theme-transition-4 flex items-center text-center text-secondary duration-500">
+                <span
+                  class="one m-text theme-transition-4 min-h-[45px] rounded-full bg-black-4 px-6 py-3 font-medium duration-500 bg-primary">
+                  Subscribe
+                </span>
+                <span
+                  class="two d-center theme-transition-4 flex min-h-[45px] shrink-0 items-center justify-center rounded-full bg-black-4 p-3 text-center duration-500 bg-primary">
+                  <i class="ph-bold ph-arrow-up-right text-[24px]" data-icon-name="arrow-right"></i>
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <!-- Header Ends -->
+  <!-- Hero Section Starts -->
+  <section class="py-6">
+    <div class="container">
+      <div class="w-full relative hero-bg pt-8 pr-8 p-6 sm:pl-8 md:pl-[60px] lg:pl-[100px] pb-8 sm:pb-[60px] md:pb-[100px] lg:pb-[140px] rounded-xl">
+        <div class="flex max-sm:flex-wrap items-center justify-start sm:justify-end gap-1 pb-4 sm:pb-6 md:pb-10 lg:pb-[50px]">
+          <span class="size-[40px] md:size-[50px] lg:size-[58px] d-center rounded-full bg-nc10 hover:bg-primary duration-500 cursor-pointer">
+            <i class="ph ph-sliders-horizontal text-3xl"></i>
+          </span>
+          <span class="rounded-full bg-nc10 hover:bg-primary duration-500 cursor-pointer py-2 sm:py-3 md:py-4 px-3 sm:px-5 md:px-6 inline-block font-normal sm:text-base">Room 01</span>
+          <span class="rounded-full bg-nc10 hover:bg-primary duration-500 cursor-pointer py-2 sm:py-3 md:py-4 px-3 sm:px-5 md:px-6 inline-block font-normal sm:text-base">Room 02</span>
+          <span class="rounded-full bg-nc10 hover:bg-primary duration-500 cursor-pointer py-2 sm:py-3 md:py-4 px-3 sm:px-5 md:px-6 inline-block font-normal sm:text-base">Room 03</span>
+        </div>
+        <div class="">
+          <h1 class="display-1 mb-6 md:mb-8 text-nc10">Discover Your Ideal <br class="max-2xl:hidden">
+            Living Space</h1>
+          <div class="btn-area z-20 md:flex duration-500">
+            <a href="#" aria-label="Contact"
+              class="move-btn theme-transition-4 flex items-center text-center text-secondary duration-500">
+              <span
+                class="one m-text d-center theme-transition-4 min-h-[45px] rounded-full bg-black-4 px-6 py-2 font-medium duration-500 bg-primary">
+                Book An Appointment
+              </span>
+              <span
+                class="two d-center theme-transition-4 flex min-h-[45px] shrink-0 items-center justify-center rounded-full bg-black-4 p-3 text-center duration-500 bg-primary">
+                <i class="ph-bold ph-arrow-up-right text-[24px]" data-icon-name="arrow-right"></i>
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Hero Section Ends -->
+  <!-- Luxury Section Starts -->
+  <section>
+    <div class="container">
+      <div class="grid grid-cols-12 gap-4 md:gap-6">
+        <div class="col-span-full md:col-span-8 4xl:col-span-6">
+          <div class="relative">
+            <img class="w-full" src="assets/images/lux.png" alt="Image">
+            <div class="absolute bottom-10 left-10">
+              <h1 class="mb-3 text-nc10">Luxury Condo</h1>
+              <span class="font-normal text-nc10">345 PARK AVENUE, NEW YORK, NY</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-span-full md:col-span-4 4xl:col-span-3">
+          <div class="relative">
+            <img class="w-full" src="assets/images/play-img.png" alt="Image">
+            <a href="https://www.youtube.com/watch?v=Avk877RvKiE?si=axyRjTH568ti6okn"
+              class="popup-youtube text-uppercase absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+              <img class="" src="assets/images/icon/play-btn.png" alt="Play">
+            </a>
+          </div>
+        </div>
+        <div class="col-span-full 4xl:col-span-3">
+          <div class="p-10 rounded-[20px] border border-nc20 bg-secondary1 h-full my-auto flex flex-col md:flex-row 4xl:flex-col justify-between">
+            <div class="counters mb-6 md:mb-8 lg:mb-10">
+              <h2 class="max-md:text-4xl flex items-center justify-start">
+                <span class="odometer" counter-value="25"></span>
+                <span class="">+</span>
+              </h2>
+              <span class="font-normal">YEARS IN SERVICE</span>
+            </div>
+            <div class="counters mb-6 md:mb-8 lg:mb-10">
+              <h2 class="max-md:text-4xl flex items-center justify-start">
+                <span class="odometer" counter-value="40"></span>
+                <span class="">+</span>
+              </h2>
+              <span class="font-normal">SATISFIED CUSTOMERS</span>
+            </div>
+            <div class="counters">
+              <h2 class="max-md:text-4xl flex items-center justify-start">
+                <span class="odometer" counter-value="420"></span>
+                <span class="">+</span>
+              </h2>
+              <span class="font-normal">ACTIVE EMPLOYEES</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Luxury Section Ends -->
+
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  <script src="./assets/js/plguins.js"></script>
+  <script src="./assets/js/plguins-custom.js"></script>
+  <script src="./assets/js/index.js"></script>
+  <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
