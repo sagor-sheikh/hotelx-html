@@ -53,20 +53,21 @@ document.addEventListener("DOMContentLoaded", function () {
             });
         }
 
+        // Brand Sliders
         let bradCarouselShow = document.querySelector('.brad-carousel-show');
         if (bradCarouselShow) {
             const swiper = new Swiper(bradCarouselShow, {
                 loop: true,
-                speed: 1000,
+                speed: 5000,
                 autoplay: {
-                    delay: 1000,
+                    delay: 0,
                     disableOnInteraction: false,
                 },
                 spaceBetween: 24,
                 slidesPerView: 1,
                 breakpoints: {
                     1599: {
-                        slidesPerView: 3,
+                        slidesPerView: 2,
                     },
                     1400: {
                         slidesPerView: 2,

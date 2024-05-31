@@ -24,14 +24,15 @@
 
 // Header Ends
 // brad-carousel Starts
-.brad-carousel {
+// brad-carousel Starts
+.brad-carousel,.brad-carousel-show {
   .swiper-wrapper {
     -webkit-transition-timing-function: linear !important;
     -o-transition-timing-function: linear !important;
     transition-timing-function: linear !important;
   }
 }
-
+// brad-carousel Ends
 // brad-carousel Ends
 // Countdown Starts
 .counters {
