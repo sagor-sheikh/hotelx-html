@@ -90,11 +90,11 @@ textarea {
 		content: '';
 		width: 1px;
 		height: 40px;
-		background-color: #96F048;
+		background-color: #222;
 	}
 
 	&.lg::before {
-		@apply w-0.5 h-[50px] lg:h-20
+		@apply w-0.5 h-[60px] lg:h-[60px] opacity-40
 	}
 
 	&.lgx::before {

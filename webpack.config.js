@@ -8,6 +8,7 @@ const HtmlWebpackSimpleIncludePlugin = require("html-webpack-simple-include-plug
 // List of HTML Pages files
 const htmlFiles = [
   "index",
+  "about",
 ];
 
 // List of partial files to include
