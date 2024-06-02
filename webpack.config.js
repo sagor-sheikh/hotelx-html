@@ -9,6 +9,11 @@ const HtmlWebpackSimpleIncludePlugin = require("html-webpack-simple-include-plug
 const htmlFiles = [
   "index",
   "about",
+  "properties",
+  "properties-details",
+  "blog",
+  "blog-details",
+  "contact",
 ];
 
 // List of partial files to include
