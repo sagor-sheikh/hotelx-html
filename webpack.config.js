@@ -14,6 +14,9 @@ const htmlFiles = [
   "blog",
   "blog-details",
   "contact",
+  "services",
+  "services-details",
+  "booking",
 ];
 
 // List of partial files to include
