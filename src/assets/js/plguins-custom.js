@@ -491,5 +491,71 @@ document.addEventListener("DOMContentLoaded", function () {
             });
         });
         // Tabs Ends
+
+        // Show elements
+        $(".outin").click(function () {
+            $(".book_park").slideToggle("slow")
+        });
+        $(".outintwo").click(function () {
+            $(".book_parktwo").slideToggle("slow")
+        });
+
+
+        
+        // Check Radio button Starts
+        $(document).ready(function () {
+            // Initialize the radio groups
+            initializeRadioGroup('#group1');
+            initializeRadioGroup('#group2');
+            // Initialize more groups as needed
+        });
+        
+        function initializeRadioGroup(groupSelector) {
+            var $group = $(groupSelector);
+        
+            // Listen for changes on radio inputs within the group
+            $group.find('input:radio').change(function () {
+                handleRadioChange($(this), $group);
+            });
+        
+            // Listen for clicks on cards within the group
+            $group.find(".card").click(function () {
+                handleCardClick($(this), $group);
+            });
+        }
+        
+        function handleRadioChange(radio, $group) {
+            var radioClicked = radio.attr('id');
+            unclickAllRadios($group);
+            deactivateAllCards($group);
+            clickRadio(radioClicked);
+            activateCard(radioClicked);
+        }
+        
+        function handleCardClick(card, $group) {
+            var inputElementId = card.find('input[type=radio]').attr('id');
+            unclickAllRadios($group);
+            deactivateAllCards($group);
+            clickRadio(inputElementId);
+            activateCard(inputElementId);
+        }
+        
+        function unclickAllRadios($group) {
+            $group.find("input:radio").prop("checked", false);
+        }
+        
+        function clickRadio(inputElementId) {
+            $("#" + inputElementId).prop("checked", true);
+        }
+        
+        function deactivateAllCards($group) {
+            $group.find(".card").removeClass("active");
+        }
+        
+        function activateCard(inputElementId) {
+            $("#" + inputElementId + "-card").addClass("active");
+        }
+        
+        // Check Radio button Ends
     });
 });
