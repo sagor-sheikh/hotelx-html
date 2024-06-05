@@ -499,6 +499,10 @@ document.addEventListener("DOMContentLoaded", function () {
         $(".outintwo").click(function () {
             $(".book_parktwo").slideToggle("slow")
         });
+        $(".outinthree").click(function () {
+            $(".book_parkthree").slideToggle("slow")
+        });
+
 
 
         
@@ -557,5 +561,64 @@ document.addEventListener("DOMContentLoaded", function () {
         }
         
         // Check Radio button Ends
+
+        $(document).ready(function () {
+            // Initialize the radio groups
+            new RadioGroup('.group1');
+            new RadioGroup('.group2');
+            // Initialize more groups as needed
+        });
+        
+        class RadioGroup {
+            constructor(groupSelector) {
+                this.$group = $(groupSelector);
+                this.initialize();
+            }
+        
+            initialize() {
+                // Listen for changes on radio inputs within the group
+                this.$group.find('input:radio').change((event) => {
+                    this.handleRadioChange($(event.target));
+                });
+        
+                // Listen for clicks on cards within the group
+                this.$group.find(".card").click((event) => {
+                    this.handleCardClick($(event.currentTarget));
+                });
+            }
+        
+            handleRadioChange(radio) {
+                var radioClass = radio.attr('class').split(' ').find(cls => cls.startsWith('radio-'));
+                this.unclickAllRadios();
+                this.deactivateAllCards();
+                this.clickRadio(radioClass);
+                this.activateCard(radioClass);
+            }
+        
+            handleCardClick(card) {
+                var radioClass = card.find('input[type=radio]').attr('class').split(' ').find(cls => cls.startsWith('radio-'));
+                this.unclickAllRadios();
+                this.deactivateAllCards();
+                this.clickRadio(radioClass);
+                this.activateCard(radioClass);
+            }
+        
+            unclickAllRadios() {
+                this.$group.find("input:radio").prop("checked", false);
+            }
+        
+            clickRadio(radioClass) {
+                this.$group.find(`.${radioClass}`).prop("checked", true);
+            }
+        
+            deactivateAllCards() {
+                this.$group.find(".card").removeClass("active");
+            }
+        
+            activateCard(radioClass) {
+                this.$group.find(`.${radioClass}-card`).addClass("active");
+            }
+        }
+        
     });
 });

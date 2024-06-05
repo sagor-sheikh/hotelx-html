@@ -164,20 +164,22 @@
                         <div class="col-span-full lg:col-span-6">
                             <div data-aos="zoom-up" data-aos-duration="1600" class="border border-nc20 px-3 py-6 sm:p-6 md:p-10 lg:p-[60px] rounded-xl h-full">
                                 <h3 class="mb-8 md:mb-10 lg:mb-[60px] leading-8 text-center">Get in touch</h3>
-                                <form action="">
+                                <form id="contactForm" action="./assets/mail/send_email.php">
                                     <div class="flex items-center max-sm:flex-wrap gap-4 md:gap-6 mb-4 md:mb-6">
-                                        <input type="text"
-                                            class="w-full rounded-xl border border-nc20 p-3 font-light placeholder:text-nc50"
-                                            placeholder="Name">
-                                        <input type="email"
-                                            class="w-full rounded-xl border border-nc20 p-3 font-light placeholder:text-nc50"
-                                            placeholder="Email">
+                                        <input type="text" id="name" name="name" 
+                                            class="w-full rounded-xl border border-nc20 p-3 font-light placeholder:text-nc50" 
+                                            placeholder="Name" required>
+                                        <span id="nameError" class="error-message"></span>
+                                        <input type="email" id="email" name="email" 
+                                            class="w-full rounded-xl border border-nc20 p-3 font-light placeholder:text-nc50" 
+                                            placeholder="Email" required>
+                                        <span id="emailError" class="error-message"></span>
                                     </div>
-                                    <textarea rows="6" name="" id=""
-                                        class="w-full rounded-xl border border-nc20 p-3 font-light mb-4 md:mb-6 placeholder:text-nc50"
-                                        placeholder="Messages"></textarea>
-                                    <button class="w-full bg-primary text-nc30 rounded-xl p-3 font-semibold">Send
-                                        Message</button>
+                                    <textarea rows="6" id="message" name="message" 
+                                        class="w-full rounded-xl border border-nc20 p-3 font-light mb-4 md:mb-6 placeholder:text-nc50" 
+                                        placeholder="Messages" required></textarea>
+                                    <span id="messageError" class="error-message"></span>
+                                    <button type="submit" class="w-full bg-primary text-nc30 rounded-xl p-3 font-semibold">Send Message</button>
                                 </form>
                             </div>
                         </div>
@@ -298,6 +300,7 @@
     </footer>
     <!-- Footer Section Ends -->
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <script src="./assets/js/mail-script.js"></script>
     <script src="./assets/js/plguins.js"></script>
     <script src="./assets/js/plguins-custom.js"></script>
     <script src="./assets/js/index.js"></script>

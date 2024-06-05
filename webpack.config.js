@@ -18,6 +18,7 @@ const htmlFiles = [
   "services-details",
   "booking",
   "booking-two",
+  "booking-three",
 ];
 
 // List of partial files to include
