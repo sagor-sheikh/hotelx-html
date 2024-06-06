@@ -2635,9 +2635,6 @@ iframe {
   .\32xl\:gap-\[46px\]{
     gap: 46px;
   }
-  .\32xl\:p-\[60px\]{
-    padding: 60px;
-  }
 }
 
 @media (min-width: 1600px){
