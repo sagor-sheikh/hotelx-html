@@ -197,3 +197,15 @@
   margin-top: 0.25em;
 }
 // Email validation Ends
+
+.radio-color{
+  [type="radio"]:checked+label:after {
+    background-color: red;
+    border: 2px solid red;
+  }
+}
+[type="radio"] {
+  font-size: inherit;
+  width: 0.75em;
+  height: 0.75em;
+}

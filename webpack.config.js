@@ -23,7 +23,8 @@ const htmlFiles = [
 
 // List of partial files to include
 const partialFiles = [
-  // "header",
+  "header",
+  "footer",
 ];
 // Create HtmlWebpackPlugin instances for each HTML file
 const htmlPlugins = htmlFiles.map(
