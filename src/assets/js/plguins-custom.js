@@ -244,7 +244,7 @@ document.addEventListener("DOMContentLoaded", function () {
         $(document).ready(function () {
             $(".odometer").each(function () {
                 var $odometerElement = $(this);
-                var elementValue = Number($odometerElement.attr("counter-value"));
+                var elementValue = Number($odometerElement.attr("data-counter-value"));
 
                 var od = new Odometer({
                     el: $odometerElement[0],
