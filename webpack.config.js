@@ -25,6 +25,7 @@ const htmlFiles = [
 const partialFiles = [
   "header",
   "footer",
+  "back-demo",
 ];
 // Create HtmlWebpackPlugin instances for each HTML file
 const htmlPlugins = htmlFiles.map(
