@@ -11,8 +11,128 @@
 <script defer src="assets/js/index.js"></script><link href="assets/css/style.css" rel="stylesheet"></head>
 
 <body>
-  <!-- Header Starts -->
-  <header class="sticky top-0 z-50 mt-3 md:mt-6 max-md:px-3">
+    <!-- Back to demo Starts -->
+    <div id="sidebar" class="w-full h-full min-h-full translate-x-[100%] duration-700 fixed bg-[#050505] left-0 top-0 z-[400000]">
+    <div class="absolute top-3 right-3 z-10 cursor-pointer size-10 rounded-full flex items-center justify-center bg-[#FEA603] group text-[#fff]" id="sidebar-close-btn">
+      <i class="ph-bold ph-x text-[24px] group-hover:rotate-180 duration-300"></i>
+    </div>
+    <button
+      id="sidebar-demo-btn"
+      class="w-auto whitespace-nowrap absolute -left-[240px] text-[#050505] xxl:-left-[260px] bottom-[270px] cursor-pointer z-10 -translate-y-full rotate-90 origin-bottom-right h-fit flex rounded-md flex-col l-text uppercase py-2 px-4 bg-[#FEA603]"
+    >
+      5+ Free-Built Sites
+    </button>
+    <div class="px-3 py-10 h-full min-h-full relative w-full overflow-y-scroll bg-[#050505]">
+      <div class="max-w-[1728px] mx-auto">
+        <div
+          class="px-3 sm:px-6 py-3 w-fit mx-auto rounded-full l-text font-medium text-[#fff] button-bg bg-gradient-to-r from-[#756ED5]/30 via-[#E276D5]/60 to-[#4EEC9B] flex items-center gap-2"
+          data-aos="zoom-out-down"
+          data-aos-duration="2000"
+        >
+          <img src="./assets/images/demo-image/envato-logo.png" alt="Envato Logo" /> <span class="m-text font-medium">Create A Professional Website!</span>
+        </div>
+        <h2 class="text-center d4 font-bold mt-6 text-[#fff] title-animation">
+          <span class="text-[#52FF00]">5</span><span class="text-[#FEA603]">+</span> Creative & Unique <span class="text-[#FEA603] underline underline-offset-[15px]">Homepages</span>
+        </h2>
+        <div class="spt80px"></div>
+        <div class="grid grid-cols-1 md:grid-cols-2 xxl:grid-cols-3 gap-10 lg:gap-12">
+          <!-- single page -->
+          <div data-content-id="beauty-salon" class="tab-content text-[#fff]">
+            <div class="bg-[#141414] border relative mx-auto group border-[#565656]/50 rounded-lg px-3 pt-3 pb-6">
+              <div>
+                <img src="./assets/images/demo-image/demo-home-1.png" alt="Home page image" class="w-full demo-page-image" />
+              </div>
+              <div class="flex items-center justify-between px-3 pt-6 flex-wrap gap-4">
+                <div>
+                  <a href="https://glowix.vercel.app/" class="h4 font-bold text-[#fff] hover:text-[#FEA603] duration-300">Beauty salon</a>
+                  <p class="m-text text-[#B8B8B8] pt-1 whitespace-normal">beauty, beauty products, cosmetic shop,</p>
+                </div>
+                <div class="flex items-center gap-1">
+                  <span class="rounded-full px-3 py-1 border border-[#52FF00] font-bold s-text text-[#52FF00] uppercase">POPULAR</span>
+                  <span class="rounded-full px-3 py-1 text-[#fff] s-text bg-[#FF481F] uppercase">HOT</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- single page -->
+          <div data-content-id="conference" class="tab-content text-[#fff]">
+            <div class="bg-[#141414] border relative mx-auto group border-[#565656]/50 rounded-lg px-3 pt-3 pb-6">
+              <div>
+                <img src="./assets/images/demo-image/demo-home-2.png" alt="Home page image" class="w-full demo-page-image" />
+              </div>
+              <div class="flex items-center justify-between px-3 pt-6 flex-wrap gap-4">
+                <div>
+                  <a href="https://confon.vercel.app/" class="h4 font-bold text-[#fff] hover:text-[#FEA603] duration-300">Conference</a>
+                  <p class="m-text text-[#B8B8B8] pt-1 whitespace-normal">activity, conference,congresses, event,</p>
+                </div>
+                <div class="flex items-center gap-1">
+                  <span class="rounded-full px-3 py-1 border border-[#52FF00] font-bold s-text text-[#52FF00] uppercase">POPULAR</span>
+                  <span class="rounded-full px-3 py-1 text-[#fff] s-text bg-[#FF481F] uppercase">HOT</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- single page -->
+          <div data-content-id="car-repair" class="tab-content text-[#fff]">
+            <div class="bg-[#141414] border relative mx-auto group border-[#565656]/50 rounded-lg px-3 pt-3 pb-6">
+              <div>
+                <img src="./assets/images/demo-image/demo-home-3.png" alt="Home page image" class="w-full demo-page-image" />
+              </div>
+              <div class="flex items-center justify-between px-3 pt-6 flex-wrap gap-4">
+                <div>
+                  <a href="https://crafterx.vercel.app/" class="h4 font-bold text-[#fff] hover:text-[#FEA603] duration-300">Car Repair</a>
+                  <p class="m-text text-[#B8B8B8] pt-1 whitespace-normal">auto, auto parts, automotive, car,</p>
+                </div>
+                <div class="flex items-center gap-1">
+                  <span class="rounded-full px-3 py-1 border border-[#52FF00] font-bold s-text text-[#52FF00] uppercase">POPULAR</span>
+                  <span class="rounded-full px-3 py-1 text-[#fff] s-text bg-[#FF481F] uppercase">HOT</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- single page -->
+          <div data-content-id="solon" class="tab-content text-[#fff] w-full">
+            <div class="bg-[#141414] border relative mx-auto group border-[#565656]/50 rounded-lg px-3 pt-3 pb-6">
+              <div>
+                <img src="./assets/images/demo-image/demo-home-4.png" alt="Home page image" class="w-full demo-page-image" />
+              </div>
+              <div class="flex items-center justify-between px-3 pt-6 flex-wrap gap-4">
+                <div>
+                  <a href="https://soloom.vercel.app/" class="h4 font-bold text-[#fff] hover:text-[#FEA603] duration-300">Solon</a>
+                  <p class="m-text text-[#B8B8B8] pt-1 whitespace-normal">beauty, beauty products, cosmetic shop,</p>
+                </div>
+                <div class="flex items-center gap-1">
+                  <span class="rounded-full px-3 py-1 border border-[#52FF00] font-bold s-text text-[#52FF00] uppercase">POPULAR</span>
+                  <span class="rounded-full px-3 py-1 text-[#fff] s-text bg-[#FF481F] uppercase">HOT</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- single page -->
+          <div data-content-id="caffez" class="tab-content text-[#fff]">
+            <div class="bg-[#141414] border relative mx-auto group border-[#565656]/50 rounded-lg px-3 pt-3 pb-6">
+              <div>
+                <img src="./assets/images/demo-image/demo-home-5.png" alt="Home page image" class="w-full demo-page-image" />
+              </div>
+              <div class="flex items-center justify-between px-3 pt-6 flex-wrap gap-4">
+                <div>
+                  <a href="https://caffez-html.vercel.app/" class="h4 font-bold text-[#fff] hover:text-[#FEA603] duration-300">Caffez</a>
+                  <p class="m-text text-[#B8B8B8] pt-1 whitespace-normal">booking, burger, caffe, chill, delivery</p>
+                </div>
+                <div class="flex items-center gap-1">
+                  <span class="rounded-full px-3 py-1 border border-[#52FF00] font-bold s-text text-[#52FF00] uppercase">POPULAR</span>
+                  <span class="rounded-full px-3 py-1 text-[#fff] s-text bg-[#FF481F] uppercase">HOT</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    <!-- Back to demo Ends -->
+    <!-- Header Starts -->
+    <header class="sticky top-0 z-50 mt-3 md:mt-6 max-md:px-3">
     <div class="container p-4 sm:p-6 bg-secondary1 border border-nc20">
       <nav class="text-nw10 rounded-3xl">
         <div class="flex justify-between items-center relative">
@@ -96,7 +216,7 @@
       </nav>
     </div>
   </header>
-  <!-- Header Ends -->
+    <!-- Header Ends -->
     <!-- Breadcrumb Section Starts -->
     <div class="container mt-4 md:mt-6">
         <div class=" p-10 sm:p-12 md:p-[60px] bg-nc30 rounded-xl">
@@ -185,35 +305,36 @@
         <div class="container">
             <div class="grid grid-cols-12 gap-4 md:gap-6">
                 <div class="3xl:col-start-2 col-span-full 3xl:col-span-10">
-                    <div class="w-full py-10 sm:py-14 md:py-20 lg:py-[120px] px-3 sm:px-6 md:px-10 lg:px-14 3xl:px-[90px] flex items-center justify-center sm:justify-between max-lg:flex-wrap rounded-xl gap-6 border border-nc20 bg-secondary1 relative">
-                        <div  data-aos="fade-left" data-aos-duration="1200" class="counters relative">
+                    <div
+                        class="w-full py-10 sm:py-14 md:py-20 lg:py-[120px] px-3 sm:px-6 md:px-10 lg:px-14 3xl:px-[90px] flex items-center justify-center sm:justify-between max-lg:flex-wrap rounded-xl gap-6 border border-nc20 bg-secondary1 relative">
+                        <div data-aos="fade-left" data-aos-duration="1200" class="counters relative">
                             <h2 class="display-1 flex items-center justify-center">
-                              <span class="odometer" counter-value="12"></span>
-                              <span class="">K</span>
+                                <span class="odometer" data-counter-value="12"></span>
+                                <span class="">K</span>
                             </h2>
                             <h4 class="font-normal text-center">Happy Customers</h4>
                         </div>
                         <span class="v-line lg mb-14 lg:mb-23 max-md:hidden"></span>
-                        <div  data-aos="fade-left" data-aos-duration="1200" class="counters relative">
+                        <div data-aos="fade-left" data-aos-duration="1200" class="counters relative">
                             <h2 class="display-1 flex items-center justify-center">
-                              <span class="odometer" counter-value="128"></span>
-                              <!-- <span class="">K</span> -->
+                                <span class="odometer" data-counter-value="128"></span>
+                                <!-- <span class="">K</span> -->
                             </h2>
                             <h4 class="font-normal text-center">Resorts Listed</h4>
                         </div>
                         <span class="v-line lg mb-14 lg:mb-23 max-md:hidden"></span>
-                        <div  data-aos="fade-left" data-aos-duration="1200" class="counters relative">
+                        <div data-aos="fade-left" data-aos-duration="1200" class="counters relative">
                             <h2 class="display-1 flex items-center justify-center">
-                              <span class="odometer" counter-value="25"></span>
-                              <span class="">K</span>
+                                <span class="odometer" data-counter-value="25"></span>
+                                <span class="">K</span>
                             </h2>
                             <h4 class="font-normal text-center">Villa Listed</h4>
                         </div>
                         <span class="v-line lg mb-28 max-lg:hidden"></span>
-                        <div  data-aos="fade-left" data-aos-duration="1200" class="counters relative">
+                        <div data-aos="fade-left" data-aos-duration="1200" class="counters relative">
                             <h2 class="display-1 flex items-center justify-center">
-                              <span class="odometer" counter-value="15"></span>
-                              <!-- <span class="">K</span> -->
+                                <span class="odometer" data-counter-value="15"></span>
+                                <!-- <span class="">K</span> -->
                             </h2>
                             <h4 class="font-normal text-center">Worldwide Offices</h4>
                         </div>
@@ -230,7 +351,10 @@
                 <div class="lg:col-start-3 col-span-full lg:col-span-8">
                     <div data-aos="zoom-out-down" data-aos-duration="1500" class="text-center">
                         <h2 class="mb-3 display-4">Our Team</h2>
-                        <p class="fs-five font-normal opacity-80 mb-10 md:mb-12 lg:mb-[60px]">A team of experienced and dedicated professionals who are passionate about helping our clients find their dream properties. From our everyone on our team is committed to providing personalized service, expert guidance, and exceptional results.
+                        <p class="fs-five font-normal opacity-80 mb-10 md:mb-12 lg:mb-[60px]">A team of experienced and
+                            dedicated professionals who are passionate about helping our clients find their dream
+                            properties. From our everyone on our team is committed to providing personalized service,
+                            expert guidance, and exceptional results.
                         </p>
                     </div>
                 </div>
@@ -238,9 +362,12 @@
                     <div class="grid grid-cols-12 gap-4 md:gap-6">
                         <div class="col-span-full sm:col-span-6 lg:col-span-3">
                             <div class="text-center">
-                                <div data-aos="zoom-in" data-aos-duration="1500" class="rounded-xl mb-6 lg:mb-8 group relative overflow-hidden">
-                                    <img class="rounded-xl w-full duration-700 transform hover:scale-[1.1]" src="assets/images/team-one.png" alt="Image">
-                                    <div class="w-full bg-primary p-[14px] absolute duration-700 -bottom-16 group-hover:bottom-10 left-0">
+                                <div data-aos="zoom-in" data-aos-duration="1500"
+                                    class="rounded-xl mb-6 lg:mb-8 group relative overflow-hidden">
+                                    <img class="rounded-xl w-full duration-700 transform hover:scale-[1.1]"
+                                        src="assets/images/team-one.png" alt="Image">
+                                    <div
+                                        class="w-full bg-primary p-[14px] absolute duration-700 -bottom-16 group-hover:bottom-10 left-0">
                                         <div class="flex justify-center items-center gap-4 md:gap-6 lg:gap-8">
                                             <a href="#">
                                                 <i class="ph ph-twitch-logo text-nc30 text-3xl"></i>
@@ -260,9 +387,12 @@
                         </div>
                         <div class="col-span-full sm:col-span-6 lg:col-span-3">
                             <div class="text-center">
-                                <div data-aos="zoom-in" data-aos-duration="1500" class="rounded-xl mb-6 lg:mb-8 group relative overflow-hidden">
-                                    <img class="rounded-xl w-full duration-700 transform hover:scale-[1.1]" src="assets/images/team-two.png" alt="Image">
-                                    <div class="w-full bg-primary p-[14px] absolute duration-700 -bottom-16 group-hover:bottom-10 left-0">
+                                <div data-aos="zoom-in" data-aos-duration="1500"
+                                    class="rounded-xl mb-6 lg:mb-8 group relative overflow-hidden">
+                                    <img class="rounded-xl w-full duration-700 transform hover:scale-[1.1]"
+                                        src="assets/images/team-two.png" alt="Image">
+                                    <div
+                                        class="w-full bg-primary p-[14px] absolute duration-700 -bottom-16 group-hover:bottom-10 left-0">
                                         <div class="flex justify-center items-center gap-4 md:gap-6 lg:gap-8">
                                             <a href="#">
                                                 <i class="ph ph-twitch-logo text-nc30 text-3xl"></i>
@@ -282,9 +412,12 @@
                         </div>
                         <div class="col-span-full sm:col-span-6 lg:col-span-3">
                             <div class="text-center">
-                                <div data-aos="zoom-in" data-aos-duration="1500" class="rounded-xl mb-6 lg:mb-8 group relative overflow-hidden">
-                                    <img class="rounded-xl w-full duration-700 transform hover:scale-[1.1]" src="assets/images/team-three.png" alt="Image">
-                                    <div class="w-full bg-primary p-[14px] absolute duration-700 -bottom-16 group-hover:bottom-10 left-0">
+                                <div data-aos="zoom-in" data-aos-duration="1500"
+                                    class="rounded-xl mb-6 lg:mb-8 group relative overflow-hidden">
+                                    <img class="rounded-xl w-full duration-700 transform hover:scale-[1.1]"
+                                        src="assets/images/team-three.png" alt="Image">
+                                    <div
+                                        class="w-full bg-primary p-[14px] absolute duration-700 -bottom-16 group-hover:bottom-10 left-0">
                                         <div class="flex justify-center items-center gap-4 md:gap-6 lg:gap-8">
                                             <a href="#">
                                                 <i class="ph ph-twitch-logo text-nc30 text-3xl"></i>
@@ -304,9 +437,12 @@
                         </div>
                         <div class="col-span-full sm:col-span-6 lg:col-span-3">
                             <div class="text-center">
-                                <div data-aos="zoom-in" data-aos-duration="1500" class="rounded-xl mb-6 lg:mb-8 group relative overflow-hidden">
-                                    <img class="rounded-xl w-full duration-700 transform hover:scale-[1.1]" src="assets/images/team-four.png" alt="Image">
-                                    <div class="w-full bg-primary p-[14px] absolute duration-700 -bottom-16 group-hover:bottom-10 left-0">
+                                <div data-aos="zoom-in" data-aos-duration="1500"
+                                    class="rounded-xl mb-6 lg:mb-8 group relative overflow-hidden">
+                                    <img class="rounded-xl w-full duration-700 transform hover:scale-[1.1]"
+                                        src="assets/images/team-four.png" alt="Image">
+                                    <div
+                                        class="w-full bg-primary p-[14px] absolute duration-700 -bottom-16 group-hover:bottom-10 left-0">
                                         <div class="flex justify-center items-center gap-4 md:gap-6 lg:gap-8">
                                             <a href="#">
                                                 <i class="ph ph-twitch-logo text-nc30 text-3xl"></i>
@@ -330,8 +466,8 @@
         </div>
     </section>
     <!-- Our Team Section Ends -->
-   <!-- Footer Section Starts -->
-     <!-- Footer Section Starts -->
+    <!-- Footer Section Starts -->
+      <!-- Footer Section Starts -->
   <footer class="pb-4 md:pb-6 max-sm:px-3">
     <div class="container px-6 py-8 sm:p-8 md:p-10 lg:p-[60px] bg-nc30 rounded-3xl">
       <div class="grid grid-cols-12 gap-y-12 sm:gap-4 md:gap-6">
@@ -407,7 +543,7 @@
     </div>
   </footer>
   <!-- Footer Section Ends -->
-   <!-- Footer Section Ends -->
+    <!-- Footer Section Ends -->
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
     <script src="./assets/js/plguins.js"></script>
     <script src="./assets/js/plguins-custom.js"></script>

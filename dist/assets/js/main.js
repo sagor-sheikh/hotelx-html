@@ -140,3 +140,17 @@ document.addEventListener('DOMContentLoaded', () => {
 
   updateProgressBar2();
 });
+
+
+// Back to demo Starts
+const sidebarDemoBtn = document.getElementById("sidebar-demo-btn");
+  const sidebarCloseBtn = document.getElementById("sidebar-close-btn");
+  sidebarDemoBtn &&
+    sidebarDemoBtn.addEventListener("click", () => {
+      document.getElementById("sidebar").classList.toggle("translate-x-[100%]");
+    });
+  sidebarCloseBtn &&
+    sidebarCloseBtn.addEventListener("click", () => {
+      document.getElementById("sidebar").classList.toggle("translate-x-[100%]");
+    });
+// Back to demo Ends
