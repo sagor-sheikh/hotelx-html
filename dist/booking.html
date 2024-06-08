@@ -13,84 +13,90 @@
 <body>
 
   <!-- Header Starts -->
-  <header class="sticky top-0 z-50 mt-3 md:mt-6">
-<div class="container p-4 sm:p-6 rounded-xl bg-secondary1 border border-nc20">
-  <nav class="text-nw10 rounded-3xl">
-    <div class="flex justify-between items-center relative">
-      <a href="../index.html" class="flex items-center gap-3">
-        <img class="w-[40px] md:w-full" src="./assets/images/logo.png" alt="logo">
-        <h3 class="font-bold max-lg:hidden flex items-center gap-[2px]">Hotel <span
-            class="fs-three text-primary">X</span></h3>
-      </a>
-
-      <!-- MOBILE NAV ICON -->
-      <div class="md:hidden block absolute top-[15%] right-0">
-        <button aria-label="navigation" type="button"
-          class="md:hidden text-nc50 transition duration-300 focus:outline-none focus:text-nc50 hover:text-nc50"><i
-            class="ph-thin ph-list text-3xl" id="bars"></i></button>
-      </div>
-
-      <!-- NAVIGATION - LARGE SCREENS -->
-      <div class="hidden md:flex">
-        <ul class="hidden md:flex gap-1 lg:gap-1 xl:gap-1">
-          <li class="cmnhed px-4 md:px-5 py-2 md:py-[10px] border border-nc20 rounded-full"><a href="./about.html"
-              class="transition duration-300 focus:outline-none focus:text-primary focus:underline hover:underline hover:text-primary font-normal">About</a>
-          </li>
-          <li class="cmnhedpx-4 md:px-5 py-2 md:py-[10px] border border-nc20 rounded-full"><a href="./services.html"
-              class="transition duration-300 focus:outline-none focus:text-primary focus:underline hover:underline hover:text-primary font-normal">Services</a>
-          </li>
-          <li class="px-4 md:px-5 py-2 md:py-[10px] border border-nc20 rounded-full"><a href="./properties.html"
-              class="transition duration-300 focus:outline-none focus:text-primary focus:underline hover:underline hover:text-primary font-normal">Rooms</a>
-          </li>
-          <li class="px-4 md:px-5 py-2 md:py-[10px] border border-nc20 rounded-full"><a href="./blog.html"
-              class="transition duration-300 focus:outline-none focus:text-primary focus:underline hover:underline hover:text-primary font-normal">Blog</a>
-          </li>
-        </ul>
-      </div>
-
-      <div class="btn-area max-sm:hidden z-20 hidden md:flex duration-500">
-        <a href="./contact.html" aria-label="Contact"
-          class="move-btn theme-transition-4 flex items-center text-center text-secondary duration-500">
-          <span
-            class="one m-text theme-transition-4 min-h-[45px] rounded-full bg-black-4 px-6 py-3 font-medium duration-500 bg-primary">
-            Contact Us
-          </span>
-          <span
-            class="two d-center theme-transition-4 flex min-h-[45px] shrink-0 items-center justify-center rounded-full bg-black-4 p-3 text-center duration-500 bg-primary">
-            <i class="ph-bold ph-arrow-up-right text-[24px]" data-icon-name="arrow-right"></i>
-          </span>
-        </a>
-      </div>
-    </div>
-    <!-- MOBILE MENU -->
-    <div id="mobileMenu" class="flex w-full mx-auto py-8 text-center show">
-      <div class="flex flex-col justify-center items-center w-full gap-4">
-        <a href="./about.html"
-          class="block transition duration-300 focus:outline-none focus:text-primary focus:underline hover:underline hover:text-primary font-normal">About</a>
-        <a href="./services.html"
-          class="block transition duration-300 focus:outline-none focus:text-primary focus:underline hover:underline hover:text-primary font-normal">services</a>
-        <a href="./properties.html"
-          class="block transition duration-300 focus:outline-none focus:text-primary focus:underline hover:underline hover:text-primary font-normal">Properties</a>
-        <a href="./blog.html"
-          class="block transition duration-300 focus:outline-none focus:text-primary focus:underline hover:underline hover:text-primary font-normal">Blog</a>
-        <div class="btn-area z-20 md:flex duration-500">
-          <a href="./contact.html" aria-label="Contact"
-            class="move-btn theme-transition-4 flex items-center text-center text-secondary duration-500">
-            <span
-              class="one m-text theme-transition-4 min-h-[45px] rounded-full bg-black-4 px-6 py-3 font-medium duration-500 bg-primary">
-              Contact Us
-            </span>
-            <span
-              class="two d-center theme-transition-4 flex min-h-[45px] shrink-0 items-center justify-center rounded-full bg-black-4 p-3 text-center duration-500 bg-primary">
-              <i class="ph-bold ph-arrow-up-right text-[24px]" data-icon-name="arrow-right"></i>
-            </span>
+  <header class="sticky top-0 z-50 mt-3 md:mt-6 max-md:px-3">
+    <div class="container p-4 sm:p-6 bg-secondary1 border border-nc20">
+      <nav class="text-nw10 rounded-3xl">
+        <div class="flex justify-between items-center relative">
+          <a href="../index.html" class="flex items-center gap-3">
+            <img class="w-[40px] md:w-full" src="./assets/images/logo.png" alt="logo">
+            <h3 class="font-bold max-lg:hidden flex items-center gap-[2px]">Hotel <span
+                class="fs-three text-primary">X</span></h3>
           </a>
+
+          <!-- MOBILE NAV ICON -->
+          <div class="md:hidden block absolute top-[15%] right-0">
+            <button aria-label="navigation" type="button"
+              class="md:hidden text-nc50 transition duration-300 focus:outline-none focus:text-nc50 hover:text-nc50"><i
+                class="ph-thin ph-list text-3xl" id="bars"></i></button>
+          </div>
+
+          <!-- NAVIGATION - LARGE SCREENS -->
+          <div class="hidden md:flex">
+            <ul class="hidden md:flex gap-1 lg:gap-1 xl:gap-1">
+              <li
+                class="hover:bg-primary duration-500 cmnhed px-4 md:px-5 py-2 md:py-[10px] border border-nc20 rounded-full">
+                <a href="./about.html"
+                  class="transition duration-300 focus:outline-none focus:text-primary focus:underline font-normal">About</a>
+              </li>
+              <li
+                class="hover:bg-primary duration-500 cmnhedpx-4 md:px-5 py-2 md:py-[10px] border border-nc20 rounded-full">
+                <a href="./services.html"
+                  class="transition duration-300 focus:outline-none focus:text-primary focus:underline font-normal">Services</a>
+              </li>
+              <li class="hover:bg-primary duration-500 px-4 md:px-5 py-2 md:py-[10px] border border-nc20 rounded-full">
+                <a href="./properties.html"
+                  class="transition duration-300 focus:outline-none focus:text-primary focus:underline font-normal">Rooms</a>
+              </li>
+              <li class="hover:bg-primary duration-500 px-4 md:px-5 py-2 md:py-[10px] border border-nc20 rounded-full">
+                <a href="./blog.html"
+                  class="transition duration-300 focus:outline-none focus:text-primary focus:underline font-normal">Blog</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="btn-area max-sm:hidden z-20 hidden md:flex duration-500">
+            <a href="./contact.html" aria-label="Contact"
+              class="move-btn theme-transition-4 flex items-center text-center text-secondary duration-500">
+              <span
+                class="one m-text theme-transition-4 min-h-[45px] rounded-full bg-black-4 px-6 py-3 font-medium duration-500 bg-primary">
+                Contact Us
+              </span>
+              <span
+                class="two d-center theme-transition-4 flex min-h-[45px] shrink-0 items-center justify-center rounded-full bg-black-4 p-3 text-center duration-500 bg-primary">
+                <i class="ph-bold ph-arrow-up-right text-[24px]" data-icon-name="arrow-right"></i>
+              </span>
+            </a>
+          </div>
         </div>
-      </div>
+        <!-- MOBILE MENU -->
+        <div id="mobileMenu" class="flex w-full mx-auto py-8 text-center show">
+          <div class="flex flex-col justify-center items-center w-full gap-4">
+            <a href="./about.html"
+              class="block transition duration-300 focus:outline-none focus:text-primary focus:underline hover:underline hover:bg-primary font-normal">About</a>
+            <a href="./services.html"
+              class="block transition duration-300 focus:outline-none focus:text-primary focus:underline hover:underline hover:bg-primary font-normal">services</a>
+            <a href="./properties.html"
+              class="block transition duration-300 focus:outline-none focus:text-primary focus:underline hover:underline hover:bg-primary font-normal">Properties</a>
+            <a href="./blog.html"
+              class="block transition duration-300 focus:outline-none focus:text-primary focus:underline hover:underline hover:bg-primary font-normal">Blog</a>
+            <div class="btn-area z-20 md:flex duration-500">
+              <a href="./contact.html" aria-label="Contact"
+                class="move-btn theme-transition-4 flex items-center text-center text-secondary duration-500">
+                <span
+                  class="one m-text theme-transition-4 min-h-[45px] rounded-full bg-black-4 px-6 py-3 font-medium duration-500 bg-primary">
+                  Contact Us
+                </span>
+                <span
+                  class="two d-center theme-transition-4 flex min-h-[45px] shrink-0 items-center justify-center rounded-full bg-black-4 p-3 text-center duration-500 bg-primary">
+                  <i class="ph-bold ph-arrow-up-right text-[24px]" data-icon-name="arrow-right"></i>
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </nav>
     </div>
-  </nav>
-</div>
-</header>
+  </header>
   <!-- Header Ends -->
     <!-- Breadcrumb Section Starts -->
     <div class="container mt-4 md:mt-6">
@@ -631,8 +637,8 @@
     </section>
     <!-- Booking Process Section Ends -->
    <!-- Footer Section Starts -->
-    <!-- Footer Section Starts -->
- <footer class="">
+     <!-- Footer Section Starts -->
+  <footer class="pb-4 md:pb-6 max-sm:px-3">
     <div class="container px-6 py-8 sm:p-8 md:p-10 lg:p-[60px] bg-nc30 rounded-3xl">
       <div class="grid grid-cols-12 gap-y-12 sm:gap-4 md:gap-6">
         <div class="col-span-full md:col-span-6 xl:col-span-4 3xl:col-span-3">
@@ -655,9 +661,9 @@
                   <ul class="flex flex-col gap-3 md:gap-4">
                     <li><a class="text-nc20" href="#">Company</a></li>
                     <li><a class="text-nc20" href="#">Services</a></li>
-                    <li><a class="text-nc20" href="#">Properties</a></li>
-                    <li><a class="text-nc20" href="#">Blog</a></li>
-                    <li><a class="text-nc20" href="#">Contact Us</a></li>
+                    <li><a class="text-nc20" href="./properties.html">Properties</a></li>
+                    <li><a class="text-nc20" href="./blog.html">Blog</a></li>
+                    <li><a class="text-nc20 text-nowrap" href="./contact.html">Contact Us</a></li>
                   </ul>
                 </div>
               </div>
@@ -667,7 +673,7 @@
                 <h3 class="mb-2 md:mb-8 text-nc20">Info</h3>
                 <div class="">
                   <ul class="flex flex-col gap-3 md:gap-4">
-                    <li><a class="text-nc20" href="#">Style Guide</a></li>
+                    <li><a class="text-nc20 text-nowrap" href="#">Style Guide</a></li>
                     <li><a class="text-nc20" href="#">License</a></li>
                     <li><a class="text-nc20" href="#">Changelog</a></li>
                     <li><a class="text-nc20" href="#">404</a></li>
@@ -696,7 +702,7 @@
           <div class="w-full">
             <h3 class="mb-5 lg:mb-6 text-nc20">Newsletter</h3>
             <form>
-              <div class="w-full flex items-center bg-nc50 rounded-full pr-[6px] py-[6px] pl-3">
+              <div class="w-full flex items-center bg-nc50 rounded-full pr-[10px] py-[6px] pl-3">
                 <input type="text" placeholder="Email address" class="border-none text-nc20">
                 <button class="text-base py-1 sm:py-2 px-3 sm:px-6 rounded-full bg-primary">Subscribe</button>
               </div>

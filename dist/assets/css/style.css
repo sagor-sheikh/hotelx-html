@@ -822,6 +822,9 @@ input:focus,
 .right-0{
   right: 0px;
 }
+.right-8{
+  right: 2rem;
+}
 .start-1{
   left: 0.25rem;
 }
@@ -1086,6 +1089,9 @@ input:focus,
   -moz-column-gap: 1.5rem;
        column-gap: 1.5rem;
 }
+.gap-y-10{
+  row-gap: 2.5rem;
+}
 .gap-y-12{
   row-gap: 3rem;
 }
@@ -1132,11 +1138,6 @@ input:focus,
   --tw-border-opacity: 1;
   border-color: rgba(34, 34, 34, 1);
   border-color: rgba(34, 34, 34, var(--tw-border-opacity));
-}
-.border-\[\#292824\]{
-  --tw-border-opacity: 1;
-  border-color: rgba(41, 40, 36, 1);
-  border-color: rgba(41, 40, 36, var(--tw-border-opacity));
 }
 .border-\[\#8080804d\]{
   border-color: rgba(128,128,128,0.30196);
@@ -1296,8 +1297,8 @@ input:focus,
 .pr-8{
   padding-right: 2rem;
 }
-.pr-\[6px\]{
-  padding-right: 6px;
+.pr-\[10px\]{
+  padding-right: 10px;
 }
 .pt-10{
   padding-top: 2.5rem;
@@ -1806,7 +1807,6 @@ iframe {
 }
 
 .cmnhed .active {
-  color: #FEC92F;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
@@ -1999,12 +1999,6 @@ iframe {
   color: rgba(34, 34, 34, var(--tw-text-opacity));
 }
 
-.hover\:text-primary:hover{
-  --tw-text-opacity: 1;
-  color: rgba(254, 201, 47, 1);
-  color: rgba(254, 201, 47, var(--tw-text-opacity));
-}
-
 .hover\:underline:hover{
   text-decoration-line: underline;
 }
@@ -2037,6 +2031,12 @@ iframe {
 .group:hover .group-hover\:translate-y-\[56\%\]{
   --tw-translate-y: 56%;
   transform: translate(var(--tw-translate-x), 56%) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.group:hover .group-hover\:rotate-45{
+  --tw-rotate: 45deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(45deg) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -2086,6 +2086,10 @@ iframe {
   .max-md\:flex-wrap{
     flex-wrap: wrap;
   }
+  .max-md\:px-3{
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
   .max-md\:text-4xl{
     font-size: 2.25rem;
     line-height: 2.5rem;
@@ -2098,6 +2102,10 @@ iframe {
   }
   .max-sm\:flex-wrap{
     flex-wrap: wrap;
+  }
+  .max-sm\:px-3{
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
   }
 }
 
@@ -2223,6 +2231,12 @@ iframe {
 }
 
 @media (min-width: 768px){
+  .md\:bottom-\[58px\]{
+    bottom: 58px;
+  }
+  .md\:right-10{
+    right: 2.5rem;
+  }
   .md\:col-span-2{
     grid-column: span 2 / span 2;
   }
@@ -2383,6 +2397,9 @@ iframe {
   }
   .md\:pb-3{
     padding-bottom: 0.75rem;
+  }
+  .md\:pb-6{
+    padding-bottom: 1.5rem;
   }
   .md\:pb-\[100px\]{
     padding-bottom: 100px;
