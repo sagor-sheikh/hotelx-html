@@ -2870,6 +2870,9 @@ iframe {
 }
 
 @media (min-width: 1296px){
+  .\32xl\:-left-\[260px\]{
+    left: -260px;
+  }
   .\32xl\:bottom-10{
     bottom: 2.5rem;
   }
@@ -2895,6 +2898,9 @@ iframe {
   .\32xl\:h-\[765px\]{
     height: 765px;
   }
+  .\32xl\:grid-cols-3{
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
   .\32xl\:gap-10{
     gap: 2.5rem;
   }
@@ -2904,8 +2910,17 @@ iframe {
   .\32xl\:gap-\[46px\]{
     gap: 46px;
   }
+  .\32xl\:pt-20{
+    padding-top: 5rem;
+  }
+  .\32xl\:text-\[18px\]{
+    font-size: 18px;
+  }
   .\32xl\:text-\[20px\]{
     font-size: 20px;
+  }
+  .\32xl\:text-\[24px\]{
+    font-size: 24px;
   }
 }
 
