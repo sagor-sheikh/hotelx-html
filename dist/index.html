@@ -11,6 +11,121 @@
 <script defer src="assets/js/index.js"></script><link href="assets/css/style.css" rel="stylesheet"></head>
 
 <body>
+  <!-- Buy Now button Starts -->
+  <div id="scrollButton" class="fixed left-5 2xl:left-10 bottom-5 2xl:bottom-10 z-20">
+  <style>
+    @keyframes cart-waves {
+      0% {
+        -webkit-transform: scale(0.2, 0.2);
+        transform: scale(0.2, 0.2);
+        opacity: 0;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+      }
+      50% {
+        opacity: 0.9;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
+      }
+      100% {
+        -webkit-transform: scale(0.9, 0.9);
+        transform: scale(0.9, 0.9);
+        opacity: 0;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+      }
+    }
+    .cart-waves {
+      position: absolute;
+      width: 250px;
+      height: 250px;
+      background: rgba(0, 0, 0, 0.3);
+      border: 1px solid #EBC78F;
+      opacity: 0;
+      -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+      border-radius: 100%;
+      right: -60px;
+      bottom: -60px;
+      z-index: -1;
+      -webkit-animation: cart-waves 3s ease-in-out infinite;
+      animation: cart-waves 3s ease-in-out infinite;
+    }
+    @media (max-width: 1399px) {
+      .cart-waves {
+        width: 200px !important;
+        height: 200px !important;
+        right: -50px !important;
+        bottom: -50px !important;
+      }
+    }
+    .wave-1 {
+      -webkit-animation-delay: 0s;
+      animation-delay: 0s;
+    }
+    .wave-2 {
+      -webkit-animation-delay: 0.3s;
+      animation-delay: 0.2s;
+    }
+    .wave-3 {
+      -webkit-animation-delay: 0.5s;
+      animation-delay: 0.5s;
+    }
+  </style>
+  <script>
+    let scrollTimeout;
+    const button = document.getElementById("scrollButton");
+    button &&
+      window.addEventListener("scroll", function () {
+        button.style.opacity = "0";
+        button.style.transitionDuration = "200ms";
+        button.style.transform = "translateY(50px)";
+        clearTimeout(scrollTimeout);
+        scrollTimeout = setTimeout(function () {
+          button.style.opacity = "1";
+          button.style.transitionDuration = "200ms";
+          button.style.transform = "translateY(0)";
+        }, 500); // Adjust this value to change how long after scrolling stops before the button reappears
+      });
+  </script>
+  <div class="video-main relative inline-block">
+    <div class="promo-video">
+      <div class="waves-block">
+        <div class="cart-waves wave-1"></div>
+        <div class="cart-waves wave-2"></div>
+        <div class="cart-waves wave-3"></div>
+      </div>
+    </div>
+    <a
+      href="https://themeforest.net/item/bentoweb-the-multipurpose-html5-template/52620079"
+      target="_blank"
+      class="video z-10 flex size-25 2xl:size-[135px] p-2 leading-[120%] text-center font-bold items-center justify-center rounded-full bg-[#6F9A37] text-white-1 flex-col gap-2 text-[16px] 2xl:text-[20px] whitespace-nowrap uppercase text-[#fff] hover:text-[#FFDA36] duration-300"
+    >
+      <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewBox="0,0,256,256" style="fill: #000000">
+        <g
+          fill="#FFFFFF"
+          fill-rule="nonzero"
+          stroke="none"
+          stroke-width="1"
+          stroke-linecap="butt"
+          stroke-linejoin="miter"
+          stroke-miterlimit="10"
+          stroke-dasharray=""
+          stroke-dashoffset="0"
+          font-family="none"
+          font-weight="none"
+          font-size="none"
+          text-anchor="none"
+          style="mix-blend-mode: normal"
+        >
+          <g transform="scale(5.12,5.12)">
+            <path
+              d="M23.89844,47c-10.24219,0 -18.89453,-8.64453 -18.89453,-18.875v-0.125c-0.07422,-4.92578 1.55469,-8.28516 2.25781,-9.5c1.35937,-2.34766 3.03516,-4.08984 3.55078,-4.36328c0.75391,-0.40234 1.30859,0.19531 1.55078,0.44922c0.46875,0.5 0.23438,1.10938 0.14453,1.33984c-0.89453,2.33984 -1.57812,4.35547 -1.50391,7.17188c0.09375,3.80859 1.48438,5.60156 2.08203,6.19531c0.375,0.37891 0.68359,0.55469 0.92969,0.64063c0.03906,-1.26172 0.1875,-3.78516 0.75781,-6.62891c0.33984,-1.71484 1.50781,-6.21875 4.91406,-11.00781c4.02734,-5.66406 8.76172,-8.02344 9.52734,-8.25391c1.35547,-0.40625 4.32031,-0.91406 6.74219,-1.02344c2.57422,-0.10937 3.20313,0.55469 3.96484,2.01562l0.125,0.24219c1.77344,3.33594 4.98438,13.55469 3.60938,23.85547c-1.64453,10.85938 -9.39844,17.86719 -19.75781,17.86719zM14.64844,30c-0.00781,0 -0.01562,0 -0.01953,0h0.02344c-0.00391,0 -0.00391,0 -0.00391,0z"
+            ></path>
+          </g>
+        </g>
+      </svg>
+      Buy Now
+    </a>
+  </div>
+</div>
+  <!-- Buy Now button Ends -->
   <!-- Back to demo Starts -->
   <!-- sidebar demo -->
 <div id="sidebar" class="w-full h-full min-h-full translate-x-[100%] duration-700 fixed bg-[#050505] left-0 top-0 z-[400000]">
@@ -560,7 +675,8 @@
               <h1 class="mb-3 text-nc10">Luxury Condo</h1>
               <span class="font-normal text-nc10">345 PARK AVENUE, NEW YORK, NY</span>
             </div>
-            <a href="./properties-details.html" class="max-sm:hidden absolute bottom-10 md:bottom-[58px] right-8 md:right-10 size-[60px] rounded-full bg-primary d-center group">
+            <a href="./properties-details.html"
+              class="max-sm:hidden absolute bottom-10 md:bottom-[58px] right-8 md:right-10 size-[60px] rounded-full bg-primary d-center group">
               <i class="ph ph-arrow-up-right text-[32px] group-hover:rotate-45 duration-300"></i>
             </a>
           </div>
@@ -1006,8 +1122,8 @@
     </div>
   </section>
   <!-- Blog Section Ends -->
-   <!-- Footer Section Starts -->
-     <!-- Footer Section Starts -->
+  <!-- Footer Section Starts -->
+    <!-- Footer Section Starts -->
   <footer class="pb-4 md:pb-6 max-sm:px-3">
     <div class="container px-6 py-8 sm:p-8 md:p-10 lg:p-[60px] bg-nc30 rounded-3xl">
       <div class="grid grid-cols-12 gap-y-12 sm:gap-4 md:gap-6">
@@ -1083,7 +1199,7 @@
     </div>
   </footer>
   <!-- Footer Section Ends -->
-   <!-- Footer Section Ends -->
+  <!-- Footer Section Ends -->
   <script src="https://unpkg.com/@phosphor-icons/web"></script>
   <script src="./assets/js/plguins.js"></script>
   <script src="./assets/js/plguins-custom.js"></script>

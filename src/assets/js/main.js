@@ -71,24 +71,6 @@ document.querySelectorAll(".move-btn").forEach((btn) => {
 });
 
 
-// document.querySelectorAll('.menu-link').forEach(link => {
-//   link.addEventListener('click', function (e) {
-//     e.preventDefault();
-
-//     const targetId = this.getAttribute('href').substring(1);
-//     const targetElement = document.getElementById(targetId);
-
-//     window.scrollTo({
-//       top: targetElement.offsetTop,
-//       behavior: 'smooth'
-//     });
-//   });
-// });
-
-
-
-
-
 document.addEventListener('DOMContentLoaded', () => {
   const progressBar = document.getElementById('progress-bar');
   const progressPercentage = document.getElementById('progress-percentage');
